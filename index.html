@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A fast Pokémon defensive weakness and resistance calculator."
+    />
+    <title>Pokémon Type Chart</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="hero">
+        <p class="eyebrow">Pokémon type tool</p>
+        <h1>Pokémon Type Chart</h1>
+        <p class="intro">Find any typing’s defensive weaknesses and resistances.</p>
+      </header>
+
+      <section class="selector-panel" aria-labelledby="type-selector-title">
+        <div class="section-heading">
+          <div>
+            <h2 id="type-selector-title">Choose your type</h2>
+            <p id="selection-status" aria-live="polite">Select up to two types</p>
+          </div>
+          <span class="selection-count" id="selection-count" aria-hidden="true">0 / 2</span>
+        </div>
+        <div class="type-grid" id="type-grid" aria-label="Pokémon types"></div>
+      </section>
+
+      <div class="view-switch" role="group" aria-label="Effectiveness view">
+        <button class="view-switch__button is-active" type="button" data-result-view="defending" aria-pressed="true">
+          Defending
+        </button>
+        <button class="view-switch__button" type="button" data-result-view="attacking" aria-pressed="false">
+          Attacking
+        </button>
+      </div>
+
+      <section class="results-section" aria-live="polite" aria-labelledby="results-title">
+        <h2 class="sr-only" id="results-title">Type effectiveness results</h2>
+        <div class="empty-state" id="empty-state">
+          <span class="empty-state-orb" aria-hidden="true"></span>
+          <p>Select one or two Pokémon types to calculate defensive weaknesses and resistances.</p>
+        </div>
+        <div class="results-grid" id="results-grid"></div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
