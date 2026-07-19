@@ -9,23 +9,23 @@
 
 // Alphabetical display order. Each icon is a standalone SVG asset.
 const TYPES = [
-  { id: "bug", color: "#a7ba18", ink: "#10150d" },
+  { id: "bug", color: "#a7ba18", ink: "#ffffff" },
   { id: "dark", color: "#735243", ink: "#ffffff" },
   { id: "dragon", color: "#6f5ce2", ink: "#ffffff" },
-  { id: "electric", color: "#f4c83f", ink: "#181303" },
-  { id: "fairy", color: "#df8fe6", ink: "#28102a" },
+  { id: "electric", color: "#f4c83f", ink: "#ffffff" },
+  { id: "fairy", color: "#df8fe6", ink: "#ffffff" },
   { id: "fighting", color: "#bd543f", ink: "#ffffff" },
-  { id: "fire", color: "#ef6048", ink: "#23100c" },
-  { id: "flying", color: "#7f92e8", ink: "#11152c" },
+  { id: "fire", color: "#ef6048", ink: "#ffffff" },
+  { id: "flying", color: "#7f92e8", ink: "#ffffff" },
   { id: "ghost", color: "#625fb5", ink: "#ffffff" },
-  { id: "grass", color: "#72c75a", ink: "#10210f" },
-  { id: "ground", color: "#ddb849", ink: "#211804" },
-  { id: "ice", color: "#65c5ee", ink: "#08202b" },
-  { id: "normal", color: "#a6a697", ink: "#171714" },
+  { id: "grass", color: "#72c75a", ink: "#ffffff" },
+  { id: "ground", color: "#ddb849", ink: "#ffffff" },
+  { id: "ice", color: "#65c5ee", ink: "#ffffff" },
+  { id: "normal", color: "#a6a697", ink: "#ffffff" },
   { id: "poison", color: "#a457a1", ink: "#ffffff" },
-  { id: "psychic", color: "#f04f93", ink: "#2b0617" },
-  { id: "rock", color: "#bfae68", ink: "#211d0d" },
-  { id: "steel", color: "#a9a9bc", ink: "#161720" },
+  { id: "psychic", color: "#f04f93", ink: "#ffffff" },
+  { id: "rock", color: "#bfae68", ink: "#ffffff" },
+  { id: "steel", color: "#a9a9bc", ink: "#ffffff" },
   { id: "water", color: "#3f9be8", ink: "#ffffff" },
 ];
 
@@ -55,17 +55,17 @@ const ATTACK_EFFECTIVENESS = {
 };
 
 const DEFENDING_SECTIONS = [
-  { id: "weak", title: "Weak", multipliers: [4, 2], color: "#d56c75" },
-  { id: "resistant", title: "Resistant", multipliers: [0.5, 0.25], color: "#52bda8" },
-  { id: "immune", title: "Immune", multipliers: [0], color: "#a785e5" },
-  { id: "normal", title: "Normal", multipliers: [1], color: "#7e91b2" },
+  { id: "weak", title: "Weak", multipliers: [4, 2], color: "#ffffff" },
+  { id: "resistant", title: "Resistant", multipliers: [0.5, 0.25], color: "#ffffff" },
+  { id: "immune", title: "Immune", multipliers: [0], color: "#ffffff" },
+  { id: "normal", title: "Normal", multipliers: [1], color: "#ffffff" },
 ];
 
 const ATTACKING_SECTIONS = [
-  { id: "strong", title: "Strong", multipliers: [2], color: "#74be70" },
-  { id: "weak", title: "Weak", multipliers: [0.5], color: "#d99566" },
-  { id: "immune", title: "Immune", multipliers: [0], color: "#a785e5" },
-  { id: "normal", title: "Normal", multipliers: [1], color: "#7e91b2" },
+  { id: "strong", title: "Strong", multipliers: [2], color: "#ffffff" },
+  { id: "weak", title: "Weak", multipliers: [0.5], color: "#ffffff" },
+  { id: "immune", title: "Immune", multipliers: [0], color: "#ffffff" },
+  { id: "normal", title: "Normal", multipliers: [1], color: "#ffffff" },
 ];
 
 const elements = {
