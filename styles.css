@@ -500,7 +500,8 @@ h1 {
   }
 
   .result-badges {
-    grid-template-columns: repeat(auto-fit, minmax(92px, 1fr));
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 6px;
   }
 
@@ -508,6 +509,20 @@ h1 {
     min-height: 36px;
     grid-template-columns: minmax(0, 1fr) 44px;
     border-radius: 10px;
+  }
+
+  .result-badges > .result-badge:first-child:nth-last-child(1) {
+    grid-column: 1 / -1;
+  }
+
+  .result-badges > .result-badge:first-child:nth-last-child(2),
+  .result-badges > .result-badge:nth-child(2):last-child {
+    grid-column: span 1.5;
+  }
+
+  .result-badges > .result-badge:first-child:nth-last-child(2) ~ .result-badge,
+  .result-badges > .result-badge:nth-child(2):last-child ~ .result-badge {
+    grid-column: span 1;
   }
 
   .result-badge__name,
