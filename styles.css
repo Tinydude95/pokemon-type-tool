@@ -501,7 +501,7 @@ h1 {
 
   .result-badges {
     display: grid;
-    grid-columns: repeat(6, minmax(0, 1fr));
+    grid-template-columns: repeat(6, minmax(0, 1fr));
     gap: 6px;
   }
 
@@ -512,24 +512,12 @@ h1 {
     grid-column: span 2;
   }
 
-  .result-badges:has(> .result-badge:first-child:nth-last-child(1)) .result-badge {
+  .result-badges:has(> .result-badge:last-child:nth-child(3n + 1)) > .result-badge:last-child {
     grid-column: 1 / -1;
   }
 
-  .result-badges:has(> .result-badge:first-child:nth-last-child(2)) .result-badge {
-    grid-column: span 3;
-  }
-
-  .result-badges:has(> .result-badge:first-child:nth-last-child(3)) .result-badge {
-    grid-column: span 2;
-  }
-
-  .result-badges:has(> .result-badge:last-child:nth-child(3n + 1)) .result-badge:last-child {
-    grid-column: 1 / -1;
-  }
-
-  .result-badges:has(> .result-badge:last-child:nth-child(3n + 2)) .result-badge:nth-last-child(2),
-  .result-badges:has(> .result-badge:last-child:nth-child(3n + 2)) .result-badge:last-child {
+  .result-badges:has(> .result-badge:last-child:nth-child(3n + 2)) > .result-badge:nth-last-child(2),
+  .result-badges:has(> .result-badge:last-child:nth-child(3n + 2)) > .result-badge:last-child {
     grid-column: span 3;
   }
 
